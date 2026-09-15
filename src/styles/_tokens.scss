@@ -1,0 +1,100 @@
+// ==========================================================================
+// TechNova Studio — Design Tokens (Single Source of Truth)
+// Every colour, spacing value, radius, shadow, and font used across the
+// entire application MUST be referenced from here (via CSS custom
+// properties). Never hard-code a hex value or px spacing in a component.
+// ==========================================================================
+
+:root {
+  // ---- Brand colours -----------------------------------------------------
+  --color-primary: #4f46e5;        // indigo/blue
+  --color-primary-dark: #3730a3;
+  --color-secondary: #7c3aed;      // purple
+  --color-accent: #22d3ee;         // cyan accent (used in gradient headlines)
+
+  --gradient-brand: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  --gradient-brand-hover: linear-gradient(135deg, #6d28d9 0%, #4338ca 100%);
+  --gradient-text-accent: linear-gradient(90deg, #60a5fa 0%, #a78bfa 60%, #22d3ee 100%);
+
+  // ---- Navy / dark surfaces ----------------------------------------------
+  --color-navy-950: #030b1c;
+  --color-navy-900: #071534;
+  --color-navy-800: #0b1e45;
+  --color-navy-700: #10285a;
+  --gradient-navy: linear-gradient(135deg, #030b1c 0%, #0b1e45 55%, #142a63 100%);
+
+  // ---- Neutral / text -----------------------------------------------------
+  --color-text-heading: #0b1330;
+  --color-text-body: #5b6478;
+  --color-text-muted: #8993a6;
+  --color-text-on-dark: #e7ebf7;
+  --color-text-on-dark-muted: #aab4cf;
+
+  // ---- Surfaces -----------------------------------------------------------
+  --color-bg-page: #ffffff;
+  --color-bg-alt: #f6f8fc;
+  --color-bg-card: #ffffff;
+  --color-border: #e6e9f2;
+  --color-border-soft: #eef1f8;
+
+  // ---- Semantic -----------------------------------------------------------
+  --color-success: #16a34a;
+  --color-star: #f6b93b;
+
+  // ---- Typography ----------------------------------------------------------
+  --font-family-base: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+  --fs-3xl: 2.85rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  // ---- Spacing scale (single source of truth) ------------------------------
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  // ---- Radius ---------------------------------------------------------------
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-pill: 999px;
+
+  // ---- Shadows ----------------------------------------------------------------
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 45px rgba(15, 23, 42, 0.12);
+  --shadow-glow: 0 12px 30px rgba(79, 70, 229, 0.35);
+
+  // ---- Layout -------------------------------------------------------------------
+  --container-max: 1240px;
+  --header-height: 76px;
+
+  // ---- Transitions ----------------------------------------------------------------
+  --transition-fast: 0.18s ease;
+  --transition-base: 0.25s ease;
+}

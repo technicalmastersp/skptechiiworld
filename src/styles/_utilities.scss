@@ -1,0 +1,167 @@
+// ==========================================================================
+// Utility classes — single source of truth for buttons, badges, eyebrows,
+// and grid helpers reused across the entire site.
+// ==========================================================================
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.eyebrow--on-dark {
+  color: #8fb6ff;
+}
+
+.section-title {
+  font-size: var(--fs-2xl);
+  margin-top: var(--space-2);
+}
+
+.section-sub {
+  color: var(--color-text-body);
+  font-size: var(--fs-md);
+  margin-top: var(--space-3);
+  max-width: 640px;
+  line-height: var(--lh-relaxed);
+}
+
+// ---- Buttons ---------------------------------------------------------------
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 13px 26px;
+  border-radius: var(--radius-pill);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-sm);
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--gradient-brand);
+  color: #fff;
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-primary:hover {
+  background: var(--gradient-brand-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-text-on-dark);
+  border-color: rgba(231, 235, 247, 0.35);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-outline-light {
+  background: #fff;
+  color: var(--color-primary);
+  border-color: var(--color-border);
+}
+
+.btn-outline-light:hover {
+  background: var(--color-bg-alt);
+}
+
+.btn-sm {
+  padding: 9px 18px;
+  font-size: var(--fs-xs);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+// ---- Badges / pills ---------------------------------------------------------
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+}
+
+.badge-popular {
+  background: var(--gradient-brand);
+  color: #fff;
+}
+
+// ---- Grid helpers -------------------------------------------------------------
+
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-5 { grid-template-columns: repeat(5, 1fr); }
+
+@media (max-width: 992px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-5 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .grid-2, .grid-3, .grid-4, .grid-5 {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ---- Card base ------------------------------------------------------------------
+
+.card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+}
+
+// ---- Stars -----------------------------------------------------------------------
+
+.stars {
+  color: var(--color-star);
+  font-size: var(--fs-sm);
+  letter-spacing: 2px;
+}
+
+// ---- Text helpers -----------------------------------------------------------------
+
+.text-gradient {
+  background: var(--gradient-text-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }

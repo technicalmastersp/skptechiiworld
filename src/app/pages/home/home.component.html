@@ -1,0 +1,243 @@
+<!-- ============================= HERO ============================= -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <span class="eyebrow eyebrow--on-dark">Your Vision • Our Code • A Better Tomorrow</span>
+      <h1 class="hero__title">
+        We Build Modern Websites
+        &amp; Powerful <span class="text-gradient">Web Applications</span>
+      </h1>
+      <p class="hero__desc">
+        TechNova Studio is a full-stack web development company, delivering high-performance,
+        scalable and visually stunning websites, web applications and digital solutions for
+        businesses of all sizes.
+      </p>
+      <div class="hero__actions">
+        <a routerLink="/contact" class="btn btn-primary">Get a Free Quote <tn-icon name="arrow-right" [size]="16" /></a>
+        <a routerLink="/services" class="btn btn-outline">Explore Our Services <tn-icon name="arrow-right" [size]="16" /></a>
+      </div>
+      <ul class="hero__highlights">
+        <li *ngFor="let h of highlights"><tn-icon [name]="h.icon" [size]="16" /> {{ h.label }}</li>
+      </ul>
+    </div>
+    <div class="hero__media">
+      <img src="assets/images/hero-illustration.png" alt="TechNova Studio development workspace illustration" />
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SERVICES ============================= -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section__head-row">
+      <tn-section-heading
+        eyebrow="Our Services"
+        title="Comprehensive Web Development Services"
+        subtitle="From simple business websites to complex web applications, we provide end-to-end solutions tailored to your needs."
+      />
+      <a routerLink="/services" class="link-more">View All Services <tn-icon name="arrow-right" [size]="16" /></a>
+    </div>
+
+    <div class="grid grid-5 services-grid">
+      <div class="card service-card" *ngFor="let s of services">
+        <span class="service-card__icon"><tn-icon [name]="s.icon" [size]="22" /></span>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.description }}</p>
+        <a [routerLink]="s.path" class="link-more link-more--sm">Learn More <tn-icon name="arrow-right" [size]="14" /></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PRODUCTS ============================= -->
+<section class="section section--navy products-section">
+  <div class="container products-grid">
+    <div>
+      <span class="eyebrow eyebrow--on-dark">Our Products</span>
+      <h2 class="section-title" style="color:#fff">Innovative Solutions for Your Business</h2>
+      <p class="section-sub" style="color:var(--color-text-on-dark-muted)">
+        We create digital products that solve real problems and help your business grow faster.
+      </p>
+      <a routerLink="/products" class="btn btn-outline" style="margin-top:var(--space-6)">View All Products <tn-icon name="arrow-right" [size]="16" /></a>
+    </div>
+
+    <div class="products-cards">
+      <div class="product-card" *ngFor="let p of products">
+        <span class="product-card__icon"><tn-icon [name]="p.icon" [size]="20" /></span>
+        <div>
+          <h4>{{ p.name }}</h4>
+          <p>{{ p.description }}</p>
+          <a routerLink="/products" class="link-more link-more--sm">Learn More <tn-icon name="arrow-right" [size]="14" /></a>
+        </div>
+        <span class="product-card__plus"><tn-icon name="arrow-right" [size]="14" /></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= TECH STACK ============================= -->
+<section class="section section--alt">
+  <div class="container tech-grid">
+    <div>
+      <span class="eyebrow">Our Tech Stack</span>
+      <h2 class="section-title">Modern Technologies for Powerful Solutions</h2>
+      <p class="section-sub">We use the latest and most reliable technologies to build fast, secure and scalable applications.</p>
+      <a routerLink="/technologies" class="btn btn-primary" style="margin-top:var(--space-6)">Explore All Technologies <tn-icon name="arrow-right" [size]="16" /></a>
+    </div>
+    <div class="tech-badges">
+      <tn-tech-badge *ngFor="let t of techStack" [techKey]="t.key" [name]="t.name" />
+    </div>
+  </div>
+</section>
+
+<!-- ============================= ABOUT ============================= -->
+<section class="section">
+  <div class="container about-grid">
+    <div class="about-media">
+      <img src="assets/images/workspace-1.png" alt="Developer workspace with laptop and code editor" />
+    </div>
+    <div>
+      <span class="eyebrow">About Us</span>
+      <h2 class="section-title">We Are More Than Just a Development Team</h2>
+      <p class="section-sub">
+        At TechNova Studio, we believe in turning ideas into powerful digital experiences. With expertise
+        in modern technologies and a passion for innovation, we help businesses build a strong online
+        presence, improve performance and achieve long-term growth.
+      </p>
+      <ul class="about-points">
+        <li *ngFor="let point of aboutPoints"><tn-icon name="check-circle" [size]="18" /> {{ point }}</li>
+      </ul>
+      <a routerLink="/about" class="btn btn-primary" style="margin-top:var(--space-6)">Know More About Us <tn-icon name="arrow-right" [size]="16" /></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PHOTO + STATS STRIP ============================= -->
+<section class="stats-strip">
+  <div class="stats-strip__media">
+    <img src="assets/images/workspace-2.png" alt="Modern workspace with plants and laptop" />
+  </div>
+  <div class="stats-strip__row">
+    <div class="stat" *ngFor="let s of stats">
+      <span class="stat__icon"><tn-icon [name]="s.icon" [size]="22" /></span>
+      <strong>{{ s.value }}</strong>
+      <span>{{ s.label }}</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= WHY CHOOSE US ============================= -->
+<section class="why-us">
+  <div class="container why-us__inner">
+    <div>
+      <span class="eyebrow eyebrow--on-dark">Why Choose Us</span>
+      <h2 class="why-us__title">Your Success is Our Priority</h2>
+      <p>A passionate team of developers, designers and problem-solvers working together to turn your ideas into reality.</p>
+    </div>
+    <div class="why-us__stats">
+      <div *ngFor="let s of stats" class="why-us__stat">
+        <strong>{{ s.value }}</strong>
+        <span>{{ s.label }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= TEAM ============================= -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section__head-row">
+      <tn-section-heading
+        eyebrow="Our Team"
+        title="Meet the People Behind the Magic"
+        subtitle="We go beyond just coding, we build and problem-solve and ensure your business grows online."
+      />
+      <a routerLink="/team" class="btn btn-primary btn-sm">Join Our Team <tn-icon name="arrow-right" [size]="16" /></a>
+    </div>
+
+    <div class="grid grid-5 team-grid">
+      <div class="team-card" *ngFor="let member of team">
+        <img [src]="member.photo" [alt]="member.name" />
+        <h4>{{ member.name }}</h4>
+        <p>{{ member.role }}</p>
+        <a href="#" class="team-card__social"><tn-icon name="linkedin" [size]="14" /></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PROCESS ============================= -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head-row">
+      <tn-section-heading
+        eyebrow="Our Process"
+        title="Simple Steps to Success"
+        subtitle="We follow a proven process to ensure your project is completed on time, within budget and beyond expectations."
+      />
+      <a routerLink="/about" class="btn btn-outline-light">Learn More <tn-icon name="arrow-right" [size]="16" /></a>
+    </div>
+
+    <div class="process-row">
+      <ng-container *ngFor="let step of processSteps; let last = last">
+        <div class="process-step">
+          <span class="process-step__icon"><tn-icon [name]="step.icon" [size]="22" /></span>
+          <h4>{{ step.title }}</h4>
+          <p>{{ step.description }}</p>
+        </div>
+        <tn-icon *ngIf="!last" name="chevron-right" [size]="18" class="process-step__arrow" />
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= TESTIMONIALS ============================= -->
+<section class="section">
+  <div class="container">
+    <tn-section-heading
+      eyebrow="What Our Clients Say"
+      title="Trusted by Businesses, Startups and Individuals Worldwide."
+    />
+
+    <div class="grid grid-4 testimonial-grid">
+      <div class="card testimonial-card" *ngFor="let t of testimonials">
+        <p class="testimonial-card__quote">&ldquo;{{ t.quote }}&rdquo;</p>
+        <div class="testimonial-card__author">
+          <img [src]="t.photo" [alt]="t.name" />
+          <div>
+            <strong>{{ t.name }}</strong>
+            <small>{{ t.role }}</small>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PRICING ============================= -->
+<section class="section section--alt" id="pricing">
+  <div class="container">
+    <div class="pricing-banner">
+      <span class="pricing-banner__icon"><tn-icon name="rocket" [size]="26" /></span>
+      <div>
+        <h3>Flexible Plans for Every Project</h3>
+        <p>Choose a plan that fits your requirements. Custom plans are also available.</p>
+      </div>
+      <a routerLink="/contact" class="btn btn-outline-light">Get a Free Quote <tn-icon name="arrow-right" [size]="16" /></a>
+    </div>
+
+    <div class="grid grid-3 pricing-grid">
+      <div class="card pricing-card" *ngFor="let plan of pricingPlans" [class.pricing-card--popular]="plan.popular">
+        <span class="badge badge-popular" *ngIf="plan.popular">Popular</span>
+        <h3>{{ plan.name }}</h3>
+        <p class="pricing-card__tagline">{{ plan.tagline }}</p>
+        <div class="pricing-card__price">{{ plan.price }} <small>{{ plan.period }}</small></div>
+        <ul class="pricing-card__features">
+          <li *ngFor="let f of plan.features"><tn-icon name="check" [size]="15" /> {{ f }}</li>
+        </ul>
+        <a routerLink="/contact" class="btn btn-block" [class.btn-primary]="plan.popular" [class.btn-outline-light]="!plan.popular">{{ plan.cta }}</a>
+      </div>
+    </div>
+  </div>
+</section>
