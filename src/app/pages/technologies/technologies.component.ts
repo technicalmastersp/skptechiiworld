@@ -56,6 +56,7 @@ import { TECH_STACK } from '../../core/data/site-data';
     }
     @media (max-width: 860px) { .tech-grid-page { grid-template-columns: repeat(4, 1fr); } }
     @media (max-width: 560px) { .tech-grid-page { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 400px) { .tech-grid-page { grid-template-columns: repeat(2, 1fr); gap: var(--space-6) var(--space-4); } }
   `],
 })
 export class TechnologiesComponent {

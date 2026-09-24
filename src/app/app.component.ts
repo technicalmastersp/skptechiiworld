@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { SeoService } from './core/services/seo.service';
 
 @Component({
   selector: 'tn-root',
@@ -15,4 +16,10 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     <tn-footer />
   `,
 })
-export class AppComponent {}
+export class AppComponent {
+  private readonly seo = inject(SeoService);
+
+  constructor() {
+    this.seo.init();
+  }
+}

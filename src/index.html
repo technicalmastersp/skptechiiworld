@@ -6,10 +6,34 @@
   <base href="/" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="TechNova Studio is a full-stack web development company delivering high-performance, scalable and visually stunning websites, web applications and digital solutions." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#030b1c" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Organization structured data (JSON-LD) — helps search engines understand
+       the business entity independent of any single page's content. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TechNova Studio",
+    "description": "Full-stack web development company delivering websites, web applications and digital solutions.",
+    "url": "https://www.technovastudio.com",
+    "telephone": "+91-98765-43210",
+    "email": "info@technovastudio.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "areaServed": "Worldwide",
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
   <tn-root></tn-root>

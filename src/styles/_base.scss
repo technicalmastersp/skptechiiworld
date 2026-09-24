@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 // ==========================================================================
 // Base / reset layer
 // ==========================================================================
@@ -8,6 +10,9 @@
 
 html {
   scroll-behavior: smooth;
+  // Prevents automatic text-size adjustment on mobile Safari from breaking
+  // the fluid clamp() type scale defined in _tokens.scss.
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -17,7 +22,8 @@ body {
   background: var(--color-bg-page);
   line-height: var(--lh-normal);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: hidden; // guards against any accidental horizontal overflow on narrow screens
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -25,10 +31,13 @@ h1, h2, h3, h4 {
   color: var(--color-text-heading);
   font-weight: var(--fw-extrabold);
   line-height: var(--lh-tight);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 p {
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -42,7 +51,7 @@ ul {
   list-style: none;
 }
 
-img {
+img, svg {
   max-width: 100%;
   display: block;
 }
@@ -50,6 +59,23 @@ img {
 button {
   font-family: inherit;
   cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  max-width: 100%;
+}
+
+// Visible, accessible focus ring for keyboard users — important at every
+// viewport size, especially where hover isn't available (touch devices).
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 ::selection {
@@ -83,17 +109,35 @@ button {
   color: var(--color-text-on-dark);
 }
 
-@media (max-width: 992px) {
+@media (max-width: $bp-lg) {
   .section {
     padding: var(--space-16) 0;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $bp-md) {
   .container {
     padding: 0 var(--space-4);
   }
   .section {
     padding: var(--space-12) 0;
+  }
+}
+
+@media (max-width: $bp-xs) {
+  .container {
+    padding: 0 var(--space-3);
+  }
+  .section {
+    padding: var(--space-10) 0;
+  }
+}
+
+// ---- Touch target safety net ------------------------------------------------
+// Ensures every tappable control stays comfortably above the ~44px
+// accessibility minimum on touch devices, without affecting desktop.
+@media (hover: none) and (pointer: coarse) {
+  .btn, .nav__link, .footer__socials a, .team-card__social, a.link-more {
+    min-height: 40px;
   }
 }

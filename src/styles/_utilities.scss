@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 // ==========================================================================
 // Utility classes — single source of truth for buttons, badges, eyebrows,
 // and grid helpers reused across the entire site.
@@ -44,6 +46,7 @@
   font-size: var(--fs-sm);
   border: 1px solid transparent;
   white-space: nowrap;
+  text-align: center;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
 }
 
@@ -90,6 +93,16 @@
   width: 100%;
 }
 
+@media (max-width: $bp-sm) {
+  // Long labels like "Explore All Technologies" no longer force the
+  // button (and its parent flex row) wider than a 320-375px viewport.
+  .btn {
+    white-space: normal;
+    padding: 12px 20px;
+    font-size: var(--fs-xs);
+  }
+}
+
 // ---- Badges / pills ---------------------------------------------------------
 
 .badge {
@@ -108,6 +121,9 @@
 }
 
 // ---- Grid helpers -------------------------------------------------------------
+// A single, shared responsive step-down for every grid arity used on the
+// site — component templates only ever choose grid-2 .. grid-5; how each
+// collapses per viewport is defined once, here.
 
 .grid {
   display: grid;
@@ -119,15 +135,25 @@
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
 .grid-5 { grid-template-columns: repeat(5, 1fr); }
 
-@media (max-width: 992px) {
+@media (max-width: $bp-lg) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-5 { grid-template-columns: repeat(3, 1fr); }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $bp-tablet) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-5 { grid-template-columns: repeat(2, 1fr); }
+  .grid { gap: var(--space-5); }
+}
+
+@media (max-width: $bp-md) {
   .grid-2, .grid-3, .grid-4, .grid-5 {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: $bp-xs) {
+  .grid { gap: var(--space-4); }
 }
 
 // ---- Card base ------------------------------------------------------------------
@@ -144,6 +170,12 @@
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
   border-color: transparent;
+}
+
+@media (max-width: $bp-sm) {
+  // Keeps card content (icons, headings, feature lists) from feeling
+  // cramped against the edges on the smallest phones.
+  .card { padding: var(--space-5) var(--space-4); }
 }
 
 // ---- Stars -----------------------------------------------------------------------
@@ -165,3 +197,12 @@
 
 .text-center { text-align: center; }
 .mx-auto { margin-left: auto; margin-right: auto; }
+
+// ---- Responsive visibility helpers -------------------------------------------------
+.hide-mobile { display: initial; }
+.show-mobile { display: none; }
+
+@media (max-width: $bp-tablet) {
+  .hide-mobile { display: none !important; }
+  .show-mobile { display: initial !important; }
+}

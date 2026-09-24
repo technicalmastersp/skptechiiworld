@@ -85,19 +85,22 @@ import { COMPANY, NAV_LINKS } from '../../../core/data/site-data';
     .nav__cta { margin-left: var(--space-2); }
     .menu-toggle { display: none; background: none; border: none; color: var(--color-text-heading); }
 
-    @media (max-width: 992px) {
-      .nav__link { font-size: var(--fs-xs); }
-      .nav { gap: var(--space-4); }
-      .brand__text small { display: none; }
-    }
-
-    @media (max-width: 860px) {
+    /*
+     * Single, generous breakpoint: 8 nav links + a pill CTA button need real
+     * room. Rather than shrinking font-size in a "squeezed" middle tier
+     * (which still overflowed on common laptop/tablet widths), we switch
+     * straight to the mobile menu below 1120px so the desktop nav is only
+     * ever shown when it's guaranteed to fit on one line.
+     */
+    @media (max-width: 1120px) {
       .menu-toggle { display: flex; }
       .nav {
         position: fixed;
         top: var(--header-height);
         right: 0;
         left: 0;
+        max-height: calc(100vh - var(--header-height));
+        overflow-y: auto;
         background: #fff;
         flex-direction: column;
         align-items: flex-start;
@@ -118,10 +121,16 @@ import { COMPANY, NAV_LINKS } from '../../../core/data/site-data';
       }
       .nav__link {
         width: 100%;
+        font-size: var(--fs-sm);
         padding: var(--space-3) 0;
         border-bottom: 1px solid var(--color-border-soft);
       }
       .nav__cta { margin: var(--space-4) 0 0; width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 380px) {
+      .brand__text small { display: none; }
+      .brand__text strong { font-size: var(--fs-sm); }
     }
   `],
 })

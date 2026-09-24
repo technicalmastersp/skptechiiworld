@@ -1,0 +1,14 @@
+// ==========================================================================
+// Breakpoints — single source of truth.
+// CSS custom properties cannot be read inside @media conditions, so the
+// breakpoint scale lives here as SCSS variables and is imported by every
+// stylesheet (global partials + every component's own .scss file) instead
+// of being redefined ad-hoc per file.
+// ==========================================================================
+
+$bp-xs: 380px;   // small phones (iPhone SE and similar)
+$bp-sm: 480px;   // large phones
+$bp-md: 640px;   // phablets / small tablets portrait
+$bp-tablet: 860px; // tablets portrait / small laptops
+$bp-lg: 992px;   // tablets landscape / small desktops
+$bp-xl: 1200px;  // desktop

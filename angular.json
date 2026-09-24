@@ -22,7 +22,7 @@
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": ["src/favicon.ico", "src/robots.txt", "src/sitemap.xml", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": []
           },
@@ -54,6 +54,6 @@
     }
   },
   "cli": {
-    "analytics": "efce8ef9-4e92-4e60-ac52-212914d7c83e"
+    "analytics": "9a0a67fb-dd9c-497b-82ce-164751775dec"
   }
 }

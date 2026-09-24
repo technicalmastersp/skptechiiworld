@@ -126,6 +126,7 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
     .footer__sub { margin-top: var(--space-4); line-height: var(--lh-relaxed); max-width: 420px; }
     .footer__contact { margin-top: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4); }
     .footer__contact li { display: flex; align-items: center; gap: var(--space-3); }
+    .footer__contact li > div { min-width: 0; overflow-wrap: break-word; word-break: break-word; }
     .footer__contact-icon {
       width: 36px; height: 36px; border-radius: 50%;
       background: rgba(255,255,255,0.08);
@@ -218,6 +219,12 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
       .footer__form-row { grid-template-columns: 1fr; }
       .footer__grid { grid-template-columns: 1fr 1fr; }
       .footer__bottom { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 480px) {
+      /* 2-up link columns get too narrow to read comfortably once the
+         viewport drops below ~480px; stack everything full-width. */
+      .footer__grid { grid-template-columns: 1fr; gap: var(--space-6); }
+      .footer__legal { flex-wrap: wrap; gap: var(--space-4); }
     }
   `],
 })

@@ -49,7 +49,8 @@ const DEFAULT_STYLE: WorkHeroStyle = { from: '#030b1c', to: '#142a63', blobA: '#
   styles: [`
     .work-hero {
       position: relative;
-      height: 170px;
+      aspect-ratio: 16 / 9;
+      min-height: 140px;
       border-radius: var(--radius-md);
       overflow: hidden;
       margin-bottom: var(--space-4);
