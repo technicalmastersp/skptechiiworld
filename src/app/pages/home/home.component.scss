@@ -137,7 +137,7 @@
   justify-content: space-between;
   align-items: center;
   gap: var(--space-10);
-  padding: var(--space-10) 0;
+  padding: var(--space-10) var(--space-6);
   flex-wrap: wrap;
 }
 .why-us__inner > div:first-child { min-width: 0; flex: 1 1 320px; }
