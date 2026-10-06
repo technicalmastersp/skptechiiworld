@@ -126,7 +126,7 @@ export interface PageMeta {
 export const PAGE_META: PageMeta[] = [
   {
     path: '/',
-    title: 'SKP Techii World | Web Development Company in Noida, India',
+    title: 'SKP Techii World | Web Development Company in Gurugram, India',
     description: 'SKP Techii World is a full-stack web development company delivering high-performance websites, web apps and digital solutions for businesses of all sizes.',
   },
   {
