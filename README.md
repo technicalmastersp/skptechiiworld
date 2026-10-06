@@ -26,6 +26,7 @@ always only touch **one file**:
 | Buttons, badges, cards, grid helpers | `src/styles/_utilities.scss` |
 | Shared component patterns (service cards, pricing cards, team cards, process steps, testimonials, CTA bands...) | `src/styles/_patterns.scss` |
 | All site copy/data — nav links, services, products, tech stack, team, testimonials, pricing, footer links, FAQs | `src/app/core/data/site-data.ts` |
+| Legal copy (Privacy Policy, Terms & Conditions) and its "last updated" date | `src/app/core/data/legal-data.ts` (rendered by `shared/components/legal-document`) |
 | Icons | `src/app/shared/components/icon/icon.component.ts` (inline SVG registry) |
 | Tech-stack brand colours/badges | `src/app/shared/components/tech-badge/tech-badge.component.ts` |
 | Logo files, favicons, social share image (paths, sizes, alt text) | `BRAND` in `src/app/core/data/site-data.ts` (files in `src/assets/brand/`) |
@@ -56,6 +57,8 @@ src/
       team/
       about/
       contact/
+      privacy-policy/             # /privacy-policy (data-driven)
+      terms/                      # /terms-and-conditions (data-driven)
   styles/
     _tokens.scss                  # design tokens (colours, spacing, type)
     _base.scss                    # resets + layout primitives

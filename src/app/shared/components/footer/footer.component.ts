@@ -47,6 +47,7 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
                   <option>Frontend Development</option>
                   <option>Backend Development</option>
                   <option>E-commerce Solutions</option>
+                  <option>Advertisement</option>
                 </select>
               </label>
               <label>Message *<textarea rows="1" placeholder="Tell us about your project..."></textarea></label>
@@ -99,8 +100,7 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
         <div class="footer__bottom">
           <span>&copy; {{ year }} {{ company.name }}. All rights reserved.</span>
           <div class="footer__legal">
-            <a routerLink="/">Privacy Policy</a>
-            <a routerLink="/">Terms &amp; Conditions</a>
+            <a *ngFor="let l of links.legal" [routerLink]="l.path">{{ l.label }}</a>
           </div>
         </div>
       </div>

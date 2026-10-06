@@ -132,7 +132,7 @@ export const PAGE_META: PageMeta[] = [
   {
     path: '/services',
     title: 'Web Development Services | SKP Techii World',
-    description: 'Website creation, frontend & backend development, WordPress, e-commerce, payment integration, SEO and UI/UX design — explore our full service catalogue.',
+    description: 'Website creation, frontend & backend development, WordPress, e-commerce, payments, SEO, UI/UX design and advertising — explore our full service catalogue.',
   },
   {
     path: '/products',
@@ -163,6 +163,16 @@ export const PAGE_META: PageMeta[] = [
     path: '/contact',
     title: 'Contact Us | SKP Techii World',
     description: 'Get a free quote from SKP Techii World. Call, email or fill out our contact form and we will get back to you within 24 hours.',
+  },
+  {
+    path: '/privacy-policy',
+    title: 'Privacy Policy | SKP Techii World',
+    description: 'How SKP Techii World collects, uses and protects your personal information when you use our website or contact us about our services.',
+  },
+  {
+    path: '/terms-and-conditions',
+    title: 'Terms & Conditions | SKP Techii World',
+    description: 'The terms that apply to using the SKP Techii World website and to our web development, advertising and related digital services.',
   },
 ];
 
@@ -203,6 +213,7 @@ export const SERVICES: ServiceItem[] = [
   { icon: 'gear', title: 'Website Maintenance', description: 'Regular updates, security & performance optimization.', path: '/services' },
   { icon: 'palette', title: 'UI/UX Design', description: 'Creative, user-focused and conversion-driven designs.', path: '/services' },
   { icon: 'headset', title: 'Consultation & Support', description: 'Get expert advice for your business growth.', path: '/services' },
+  { icon: 'megaphone', title: 'Advertisement', description: 'Promote your business with targeted online advertising campaigns.', path: '/services' },
 ];
 
 export const PRODUCTS: ProductItem[] = [
@@ -322,4 +333,8 @@ export const FOOTER_LINKS = {
     { label: 'Payment Gateway Integration', path: '/services' },
   ],
   technologies: ['Angular', 'React', 'JavaScript', 'TypeScript', 'Node.js'],
+  legal: [
+    { label: 'Privacy Policy', path: '/privacy-policy' },
+    { label: 'Terms & Conditions', path: '/terms-and-conditions' },
+  ],
 };

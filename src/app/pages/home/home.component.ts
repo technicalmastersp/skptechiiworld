@@ -26,7 +26,8 @@ import {
 })
 export class HomeComponent {
   highlights = HERO_HIGHLIGHTS;
-  services = SERVICES;
+  /** Home shows the first 10 so the 5-column grid stays two full rows; the rest are on /services. */
+  services = SERVICES.slice(0, 10);
   products = PRODUCTS;
   techStack = TECH_STACK;
   aboutPoints = ABOUT_POINTS;
