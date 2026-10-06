@@ -101,7 +101,6 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
           <div class="footer__legal">
             <a routerLink="/">Privacy Policy</a>
             <a routerLink="/">Terms &amp; Conditions</a>
-            <a routerLink="/">Sitemap</a>
           </div>
         </div>
       </div>
