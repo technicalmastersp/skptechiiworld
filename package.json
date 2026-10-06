@@ -1,7 +1,7 @@
 {
   "name": "skp-techii-world",
   "version": "1.0.0",
-  "description": "SKP Techii World - full-stack web development company website (Angular)",
+  "description": "SKP Techii World - full-service web development & digital solutions company website (Angular)",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
