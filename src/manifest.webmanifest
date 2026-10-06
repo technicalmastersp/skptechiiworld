@@ -1,0 +1,16 @@
+{
+  "name": "SKP Techii World",
+  "short_name": "SKP Techii",
+  "description": "Full-stack web development company delivering websites, web applications and digital solutions.",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#030b1c",
+  "theme_color": "#030b1c",
+  "icons": [
+    { "src": "assets/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/brand/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

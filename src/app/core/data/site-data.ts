@@ -82,6 +82,36 @@ export const COMPANY = {
   ],
 };
 
+export interface BrandImage {
+  /** Path relative to the site root (resolved against <base href="/">). */
+  src: string;
+  /** Intrinsic display size in CSS px — set on <img> to prevent layout shift. */
+  width: number;
+  height: number;
+}
+
+/**
+ * Brand assets — single source of truth for every logo file the app renders
+ * or advertises (UI, favicons, social share cards, structured data).
+ * Files live in src/assets/brand/. Swap a file or edit a path here and the
+ * header, footer, SeoService and index.html references stay in sync.
+ */
+export const BRAND = {
+  /** Square app mark, used beside the live-text wordmark in the header. */
+  icon: { src: 'assets/brand/skp-icon.webp', width: 42, height: 40 } satisfies BrandImage,
+  /** Icon + wordmark + tagline lockup, designed for dark surfaces (footer). */
+  lockupDark: { src: 'assets/brand/skp-lockup-dark.webp', width: 280, height: 73 } satisfies BrandImage,
+  /** 512px transparent icon — used as the schema.org logo and manifest icon. */
+  logoSquare: '/assets/brand/icon-512.png',
+  /** Open Graph / Twitter share card. `path` is root-relative; SeoService prefixes COMPANY.domain. */
+  ogImage: {
+    path: '/assets/brand/og-image.jpg',
+    width: 1200,
+    height: 630,
+    alt: 'SKP Techii World — Ideas to Digital Reality',
+  },
+};
+
 export interface PageMeta {
   path: string;
   title: string;

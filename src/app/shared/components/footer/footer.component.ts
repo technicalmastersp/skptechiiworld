@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { IconComponent } from '../icon/icon.component';
+import { BrandComponent } from '../brand/brand.component';
 import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
 
 @Component({
   selector: 'tn-footer',
   standalone: true,
-  imports: [CommonModule, RouterLink, IconComponent],
+  imports: [CommonModule, RouterLink, IconComponent, BrandComponent],
   template: `
     <footer class="footer">
       <div class="container">
@@ -58,10 +59,7 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
 
         <div class="footer__grid">
           <div class="footer__brand">
-            <a routerLink="/" class="brand">
-              <span class="brand__mark">TV</span>
-              <span class="brand__text"><strong>{{ company.name }}</strong><small>{{ company.tagline }}</small></span>
-            </a>
+            <tn-brand variant="lockup" />
           </div>
 
           <div>
@@ -173,8 +171,6 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
     .footer__links a { font-size: var(--fs-sm); transition: color var(--transition-fast); }
     .footer__links a:hover { color: #8fb6ff; }
 
-    .footer__brand .brand__text strong { color: #fff; }
-    .footer__brand .brand__text small { color: var(--color-text-on-dark-muted); }
     .footer__brand p { margin-top: var(--space-4); font-size: var(--fs-sm); line-height: var(--lh-relaxed); }
 
     .footer__socials { display: flex; gap: var(--space-3); }
@@ -214,6 +210,8 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
     @media (max-width: 860px) {
       .footer__top { grid-template-columns: 1fr; gap: var(--space-8); }
       .footer__grid { grid-template-columns: repeat(2, 1fr); }
+      /* Give the logo lockup the full row so its tagline stays legible. */
+      .footer__brand { grid-column: 1 / -1; }
     }
     @media (max-width: 560px) {
       .footer__form-row { grid-template-columns: 1fr; }

@@ -28,6 +28,8 @@ always only touch **one file**:
 | All site copy/data — nav links, services, products, tech stack, team, testimonials, pricing, footer links, FAQs | `src/app/core/data/site-data.ts` |
 | Icons | `src/app/shared/components/icon/icon.component.ts` (inline SVG registry) |
 | Tech-stack brand colours/badges | `src/app/shared/components/tech-badge/tech-badge.component.ts` |
+| Logo files, favicons, social share image (paths, sizes, alt text) | `BRAND` in `src/app/core/data/site-data.ts` (files in `src/assets/brand/`) |
+| Where the logo is rendered in the UI | `src/app/shared/components/brand/brand.component.ts` (`compact` for light surfaces, `lockup` for dark) |
 
 ## Structure
 
@@ -38,6 +40,7 @@ src/
     shared/components/
       header/                     # sticky nav + mobile menu
       footer/                     # contact form + link columns
+      brand/                      # logo (icon + text, or full lockup)
       icon/                       # SVG icon registry
       tech-badge/                 # brand-coloured tech badge
       section-heading/            # eyebrow + title + subtitle
@@ -59,6 +62,7 @@ src/
     _utilities.scss               # buttons, badges, grids
     _patterns.scss                # shared card/section patterns
   assets/images/                  # cropped photography from the reference design
+  assets/brand/                   # logo icon, footer lockup, favicons, touch/PWA icons, og-image.jpg
 ```
 
 ## Responsiveness
@@ -70,3 +74,18 @@ mobile menu below `860px`.
 ## Routing
 
 All page routes are lazy-loaded standalone components, defined in `src/app/app.routes.ts`.
+
+## Brand assets
+
+| File (`src/assets/brand/`) | Used for |
+|---|---|
+| `skp-icon.webp` | Header logo mark (`BrandComponent`, `compact`) |
+| `skp-lockup-dark.webp` | Footer logo (`BrandComponent`, `lockup`) — white lettering, dark surfaces only |
+| `favicon-32.png`, `../favicon.ico` (16/32/48) | Browser tab icon |
+| `apple-touch-icon.png` | iOS home-screen icon (opaque, iOS applies its own mask) |
+| `icon-192.png`, `icon-512.png`, `icon-maskable-512.png` | `manifest.webmanifest`; `icon-512.png` is also the schema.org `logo` |
+| `og-image.jpg` (1200×630) | Open Graph / Twitter card (`SeoService` + static defaults in `index.html`) |
+
+To replace the logo: overwrite the files above (keep names/aspect ratios) or update `BRAND`
+in `site-data.ts`. The absolute URLs inside `index.html` (JSON-LD, static `og:image`) mirror
+`COMPANY.domain` + `BRAND` and must be edited by hand if the domain or filenames change.

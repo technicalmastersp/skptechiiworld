@@ -2,22 +2,17 @@ import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { IconComponent } from '../icon/icon.component';
-import { COMPANY, NAV_LINKS } from '../../../core/data/site-data';
+import { BrandComponent } from '../brand/brand.component';
+import { NAV_LINKS } from '../../../core/data/site-data';
 
 @Component({
   selector: 'tn-header',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive, IconComponent],
+  imports: [CommonModule, RouterLink, RouterLinkActive, IconComponent, BrandComponent],
   template: `
     <header class="header">
       <div class="container header__inner">
-        <a routerLink="/" class="brand" (click)="closeMenu()">
-          <span class="brand__mark">TV</span>
-          <span class="brand__text">
-            <strong>{{ company.name }}</strong>
-            <small>{{ company.tagline }}</small>
-          </span>
-        </a>
+        <tn-brand (click)="closeMenu()" />
 
         <nav class="nav" [class.nav--open]="menuOpen()">
           <a
@@ -58,22 +53,6 @@ import { COMPANY, NAV_LINKS } from '../../../core/data/site-data';
       justify-content: space-between;
       width: 100%;
     }
-    .brand { display: flex; align-items: center; gap: var(--space-3); }
-    .brand__mark {
-      width: 42px; height: 42px;
-      border-radius: var(--radius-md);
-      background: var(--gradient-brand);
-      color: #fff;
-      display: flex; align-items: center; justify-content: center;
-      font-weight: var(--fw-extrabold);
-      font-size: var(--fs-sm);
-      letter-spacing: -1px;
-      flex-shrink: 0;
-    }
-    .brand__text { display: flex; flex-direction: column; line-height: 1.2; }
-    .brand__text strong { font-size: var(--fs-md); color: var(--color-text-heading); font-weight: var(--fw-extrabold); }
-    .brand__text small { font-size: 0.7rem; color: var(--color-text-muted); }
-
     .nav { display: flex; align-items: center; gap: var(--space-6); }
     .nav__link {
       font-size: var(--fs-sm);
@@ -127,15 +106,9 @@ import { COMPANY, NAV_LINKS } from '../../../core/data/site-data';
       }
       .nav__cta { margin: var(--space-4) 0 0; width: 100%; justify-content: center; }
     }
-
-    @media (max-width: 380px) {
-      .brand__text small { display: none; }
-      .brand__text strong { font-size: var(--fs-sm); }
-    }
   `],
 })
 export class HeaderComponent {
-  company = COMPANY;
   navLinks = NAV_LINKS;
   menuOpen = signal(false);
 
