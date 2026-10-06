@@ -69,7 +69,7 @@ export const COMPANY = {
   phone: '+91 98765 43210',
   phoneHours: 'Mon - Sat, 10:00 AM - 7:00 PM',
   email: 'info@skptechiiworld.com',
-  emailNote: "We reply within 24 hours",
+  emailNote: "We reply within few hours",
   address: 'No.172, Sector 39, Gurugram, Haryana',
   address2: 'India',
   addressNote: 'Work From Anywhere',
@@ -182,7 +182,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Products', path: '/products' },
   { label: 'Our Work', path: '/our-work' },
   { label: 'Technologies', path: '/technologies' },
-  { label: 'Our Team', path: '/team' },
+  // { label: 'Our Team', path: '/team' },
   { label: 'About', path: '/about' },
   { label: 'Contact', path: '/contact' },
 ];
