@@ -28,7 +28,7 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
               </li>
               <li>
                 <span class="footer__contact-icon"><tn-icon name="map-pin" [size]="16" /></span>
-                <div><strong>{{ company.address }}</strong><small>{{ company.addressNote }}</small></div>
+                <div><strong>{{ company.address }}</strong><small>{{ company.address2 }}</small><br/><small>{{ company.addressNote }}</small></div>
               </li>
             </ul>
           </div>

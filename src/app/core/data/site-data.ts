@@ -63,14 +63,15 @@ export interface StatItem {
 }
 
 export const COMPANY = {
-  name: 'TechNova Studio',
+  name: 'SKP Techii World',
   tagline: 'Ideas to Digital Reality',
-  domain: 'https://www.technovastudio.com',
+  domain: 'https://www.skptechiiworld.com',
   phone: '+91 98765 43210',
   phoneHours: 'Mon - Sat, 10:00 AM - 7:00 PM',
-  email: 'info@technovastudio.com',
+  email: 'info@skptechiiworld.com',
   emailNote: "We reply within 24 hours",
-  address: 'Noida, Uttar Pradesh, India',
+  address: 'No.172, Sector 39, Gurugram, Haryana',
+  address2: 'India',
   addressNote: 'Work From Anywhere',
   socials: [
     { icon: 'linkedin', url: '#' },
@@ -95,43 +96,43 @@ export interface PageMeta {
 export const PAGE_META: PageMeta[] = [
   {
     path: '/',
-    title: 'TechNova Studio | Web Development Company in Noida, India',
-    description: 'TechNova Studio is a full-stack web development company delivering high-performance websites, web apps and digital solutions for businesses of all sizes.',
+    title: 'SKP Techii World | Web Development Company in Noida, India',
+    description: 'SKP Techii World is a full-stack web development company delivering high-performance websites, web apps and digital solutions for businesses of all sizes.',
   },
   {
     path: '/services',
-    title: 'Web Development Services | TechNova Studio',
+    title: 'Web Development Services | SKP Techii World',
     description: 'Website creation, frontend & backend development, WordPress, e-commerce, payment integration, SEO and UI/UX design — explore our full service catalogue.',
   },
   {
     path: '/products',
-    title: 'Our Products | TechNova Studio',
-    description: 'Explore LIC Agent Dairy, LearnHub and Business Dashboard — in-house digital products built by TechNova Studio to solve real business problems.',
+    title: 'Our Products | SKP Techii World',
+    description: 'Explore LIC Agent Dairy, LearnHub and Business Dashboard — in-house digital products built by SKP Techii World to solve real business problems.',
   },
   {
     path: '/our-work',
-    title: 'Our Work & Portfolio | TechNova Studio',
-    description: 'Browse e-commerce, web app, EdTech, dashboard and startup projects designed and built by TechNova Studio, plus client testimonials.',
+    title: 'Our Work & Portfolio | SKP Techii World',
+    description: 'Browse e-commerce, web app, EdTech, dashboard and startup projects designed and built by SKP Techii World, plus client testimonials.',
   },
   {
     path: '/technologies',
-    title: 'Our Tech Stack | TechNova Studio',
-    description: 'Angular, React, TypeScript, Node.js, Express.js, MongoDB, MySQL and WordPress — the modern technologies TechNova Studio uses to build fast, secure apps.',
+    title: 'Our Tech Stack | SKP Techii World',
+    description: 'Angular, React, TypeScript, Node.js, Express.js, MongoDB, MySQL and WordPress — the modern technologies SKP Techii World uses to build fast, secure apps.',
   },
   {
     path: '/team',
-    title: 'Our Team | TechNova Studio',
-    description: 'Meet the developers, designers and engineers behind TechNova Studio, and see open roles if you want to join the team.',
+    title: 'Our Team | SKP Techii World',
+    description: 'Meet the developers, designers and engineers behind SKP Techii World, and see open roles if you want to join the team.',
   },
   {
     path: '/about',
-    title: 'About Us | TechNova Studio',
-    description: 'Learn how TechNova Studio turns ideas into digital reality — our story, our process, and why businesses trust us with their web projects.',
+    title: 'About Us | SKP Techii World',
+    description: 'Learn how SKP Techii World turns ideas into digital reality — our story, our process, and why businesses trust us with their web projects.',
   },
   {
     path: '/contact',
-    title: 'Contact Us | TechNova Studio',
-    description: 'Get a free quote from TechNova Studio. Call, email or fill out our contact form and we will get back to you within 24 hours.',
+    title: 'Contact Us | SKP Techii World',
+    description: 'Get a free quote from SKP Techii World. Call, email or fill out our contact form and we will get back to you within 24 hours.',
   },
 ];
 
@@ -209,11 +210,11 @@ export const STATS: StatItem[] = [
 ];
 
 export const TEAM: TeamMember[] = [
-  { photo: 'assets/images/team-1.png', name: 'Shashank Pandey', role: 'Founder & Lead Developer' },
-  { photo: 'assets/images/team-2.png', name: 'Priya Sharma', role: 'Frontend Developer' },
-  { photo: 'assets/images/team-3.png', name: 'Rohit Verma', role: 'Backend Developer' },
-  { photo: 'assets/images/team-4.png', name: 'Neha Singh', role: 'UI/UX Designer' },
-  { photo: 'assets/images/team-5.png', name: 'Amit Yadav', role: 'DevOps Engineer' },
+  { photo: 'assets/images/team-1.png', name: 'Shashank S. Pandey', role: 'Founder' },
+  { photo: 'assets/images/team-4.png', name: 'Swaranjeet Singh', role: 'Director, Development' },
+  { photo: 'assets/images/team-3.png', name: 'Akhilesh Kumar', role: 'General Manager' },
+  { photo: 'assets/images/team-2.png', name: 'Shilpa Shrivastava', role: 'Lead Programmer' },
+  { photo: 'assets/images/team-5.png', name: 'Adarsh Sharma', role: 'DevOps & SEO Expert' },
 ];
 
 export const PROCESS_STEPS: ProcessStep[] = [
@@ -225,7 +226,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
-  { photo: 'assets/images/testimonial-1.png', quote: 'TechNova Studio delivered our website beyond expectations. The team is professional, responsive and highly skilled!', name: 'Rohan Mehta', role: 'CEO, GrowUpPlus' },
+  { photo: 'assets/images/testimonial-1.png', quote: 'SKP Techii World delivered our website beyond expectations. The team is professional, responsive and highly skilled!', name: 'Rohan Mehta', role: 'CEO, GrowUpPlus' },
   { photo: 'assets/images/testimonial-2.png', quote: 'Excellent service and great communication. Our eCommerce site is performing really well thanks to their expertise.', name: 'Priya Verma', role: 'Founder, StyleKart' },
   { photo: 'assets/images/testimonial-3.png', quote: 'They understood our requirements perfectly and delivered on time. Highly recommended for web development services.', name: 'Amit Singh', role: 'Co-founder, NextGen Tech' },
   { photo: 'assets/images/testimonial-4.png', quote: 'Professional team, great support and amazing results. Our business has grown significantly!', name: 'Sneha Kapoor', role: 'Marketing Head, BrightMedia' },

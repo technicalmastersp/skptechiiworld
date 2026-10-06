@@ -28,7 +28,7 @@ import { COMPANY, FAQ_ITEMS } from '../../core/data/site-data';
           </div>
           <div class="card info-card">
             <span class="info-card__icon"><tn-icon name="map-pin" [size]="20" /></span>
-            <div><h4>{{ company.address }}</h4><p>{{ company.addressNote }}</p></div>
+            <div><h4>{{ company.address }}</h4><p>{{ company.address2 }}</p><p>{{ company.addressNote }}</p></div>
           </div>
         </div>
 

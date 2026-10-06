@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.technovastudio.com/sitemap.xml
+Sitemap: https://www.skptechiiworld.com/sitemap.xml

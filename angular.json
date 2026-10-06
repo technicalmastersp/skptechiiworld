@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "technova-studio": {
+    "skp-techii-world": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": { "style": "scss", "standalone": true },
@@ -16,7 +16,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/technova-studio",
+            "outputPath": "dist/skp-techii-world",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -45,8 +45,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": { "buildTarget": "technova-studio:build:production" },
-            "development": { "buildTarget": "technova-studio:build:development" }
+            "production": { "buildTarget": "skp-techii-world:build:production" },
+            "development": { "buildTarget": "skp-techii-world:build:development" }
           },
           "defaultConfiguration": "development"
         }

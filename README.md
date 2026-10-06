@@ -1,6 +1,6 @@
-# TechNova Studio — Angular Website
+# SKP Techii World — Angular Website
 
-A full recreation of the TechNova Studio marketing site, built in **Angular 18** (standalone
+A full recreation of the SKP Techii World marketing site, built in **Angular 18** (standalone
 components, no NgModules) with a fully responsive, single-source-of-truth design system.
 
 ## Getting started
@@ -8,7 +8,7 @@ components, no NgModules) with a fully responsive, single-source-of-truth design
 ```bash
 npm install
 npm start        # ng serve -> http://localhost:4200
-npm run build    # production build -> dist/technova-studio
+npm run build    # production build -> dist/skp-techii-world
 ```
 
 Requires Node 18+ and npm. (This project was authored without network access, so

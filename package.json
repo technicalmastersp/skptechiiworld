@@ -1,7 +1,7 @@
 {
-  "name": "technova-studio",
+  "name": "skp-techii-world",
   "version": "1.0.0",
-  "description": "TechNova Studio - full-stack web development company website (Angular)",
+  "description": "SKP Techii World - full-stack web development company website (Angular)",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

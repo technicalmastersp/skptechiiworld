@@ -14,19 +14,19 @@ import { ABOUT_POINTS, STATS, PROCESS_STEPS } from '../../core/data/site-data';
     <tn-page-hero
       eyebrow="About Us"
       title="We Are More Than Just a Development Team"
-      subtitle="TechNova Studio turns ideas into powerful digital experiences — helping businesses build a strong online presence and achieve long-term growth."
+      subtitle="SKP Techii World turns ideas into powerful digital experiences — helping businesses build a strong online presence and achieve long-term growth."
     />
 
     <section class="section">
       <div class="container about-grid-page">
         <div class="about-media-page">
-          <img src="assets/images/workspace-1.png" alt="TechNova Studio workspace" />
+          <img src="assets/images/workspace-1.png" alt="SKP Techii World workspace" />
         </div>
         <div>
           <span class="eyebrow">Our Story</span>
           <h2 class="section-title">Turning Ideas Into Digital Reality Since Day One</h2>
           <p class="section-sub">
-            We started TechNova Studio with a simple belief: every business, regardless of size, deserves
+            We started SKP Techii World with a simple belief: every business, regardless of size, deserves
             a fast, beautiful and reliable digital presence. Today we partner with startups, agencies and
             enterprises to design, build and maintain the products their customers rely on.
           </p>
