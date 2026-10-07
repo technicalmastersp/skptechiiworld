@@ -175,7 +175,7 @@
 // ---- Testimonials -----------------------------------------------------------------
 .testimonial-grid { margin-top: var(--space-10); }
 .testimonial-card { display: flex; flex-direction: column; gap: var(--space-4); }
-.testimonial-card__quote { font-size: var(--fs-sm); line-height: var(--lh-relaxed); color: var(--color-text-body); font-style: italic; }
+.testimonial-card__quote { font-size: var(--fs-sm); line-height: var(--lh-relaxed); color: var(--color-text-body); font-style: italic; flex: 1;}
 .testimonial-card__author { display: flex; align-items: center; gap: var(--space-3); }
 .testimonial-card__author img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .testimonial-card__author > div { min-width: 0; }

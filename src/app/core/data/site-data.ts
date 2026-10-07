@@ -66,7 +66,7 @@ export const COMPANY = {
   name: 'SKP Techii World',
   tagline: 'Ideas to Digital Reality',
   domain: 'https://www.skptechiiworld.com',
-  phone: '+91 98765 43210',
+  phone: '+91 95197 61129',
   phoneHours: 'Mon - Sat, 10:00 AM - 7:00 PM',
   email: 'info@skptechiiworld.com',
   emailNote: "We reply within few hours",
@@ -137,7 +137,7 @@ export const PAGE_META: PageMeta[] = [
   {
     path: '/products',
     title: 'Our Products | SKP Techii World',
-    description: 'Explore LIC Agent Dairy, LearnHub and Business Dashboard — in-house digital products built by SKP Techii World to solve real business problems.',
+    description: 'Explore Policy Niketan, LearnHub and Business Dashboard — in-house digital products built by SKP Techii World to solve real business problems.',
   },
   {
     path: '/our-work',
@@ -218,7 +218,7 @@ export const SERVICES: ServiceItem[] = [
 ];
 
 export const PRODUCTS: ProductItem[] = [
-  { icon: 'briefcase', name: 'LIC Agent Dairy', description: 'A powerful web app for LIC agents to manage clients, policies and more.' },
+  { icon: 'briefcase', name: 'Policy Niketan', description: 'A powerful web app for any type of Insurance Agents to manage clients, policies and more.' },
   { icon: 'grad-cap', name: 'LearnHub', description: 'Online learning platform with courses, quizzes and certification.' },
   { icon: 'chart', name: 'Business Dashboard', description: 'Track your business performance with real-time analytics.' },
 ];
@@ -245,16 +245,16 @@ export const ABOUT_POINTS = [
 ];
 
 export const STATS: StatItem[] = [
-  { icon: 'rocket', value: '50+', label: 'Projects Completed' },
-  { icon: 'smile', value: '40+', label: 'Happy Clients' },
+  { icon: 'rocket', value: '15+', label: 'Projects Completed' },
+  { icon: 'smile', value: '10+', label: 'Happy Clients' },
   { icon: 'star', value: '4.9/5', label: 'Client Rating' },
   { icon: 'clock', value: '24/7', label: 'Support' },
 ];
 
 export const TEAM: TeamMember[] = [
-  { photo: 'assets/images/team-1.png', name: 'Shashank S. Pandey', role: 'Founder' },
+  { photo: 'assets/images/leadership/founder.jpg', name: 'Shashank S. Pandey', role: 'Founder' },
   { photo: 'assets/images/team-4.png', name: 'Swaranjeet Singh', role: 'Director, Development' },
-  { photo: 'assets/images/team-3.png', name: 'Akhilesh Kumar', role: 'General Manager' },
+  { photo: 'assets/images/leadership/akhilesh.jpg', name: 'Akhilesh Kumar', role: 'General Manager' },
   { photo: 'assets/images/team-2.png', name: 'Shilpa Shrivastava', role: 'Lead Programmer' },
   { photo: 'assets/images/team-5.png', name: 'Adarsh Sharma', role: 'DevOps & SEO Expert' },
 ];
@@ -270,8 +270,8 @@ export const PROCESS_STEPS: ProcessStep[] = [
 export const TESTIMONIALS: Testimonial[] = [
   { photo: 'assets/images/testimonial-1.png', quote: 'SKP Techii World delivered our website beyond expectations. The team is professional, responsive and highly skilled!', name: 'Rohan Mehta', role: 'CEO, GrowUpPlus' },
   { photo: 'assets/images/testimonial-2.png', quote: 'Excellent service and great communication. Our eCommerce site is performing really well thanks to their expertise.', name: 'Priya Verma', role: 'Founder, StyleKart' },
-  { photo: 'assets/images/testimonial-3.png', quote: 'They understood our requirements perfectly and delivered on time. Highly recommended for web development services.', name: 'Amit Singh', role: 'Co-founder, NextGen Tech' },
-  { photo: 'assets/images/testimonial-4.png', quote: 'Professional team, great support and amazing results. Our business has grown significantly!', name: 'Sneha Kapoor', role: 'Marketing Head, BrightMedia' },
+  { photo: 'assets/images/person-icon.png', quote: 'They understood our requirements perfectly and delivered on time. Highly recommended for web development services.', name: 'Amit Singh', role: 'Co-founder, NextGen Tech' },
+  { photo: 'assets/images/person-icon.png', quote: 'Professional team, great support and amazing results. Our business has grown significantly!', name: 'Sneha Kapoor', role: 'Marketing Head, BrightMedia' },
 ];
 
 export const PRICING_PLANS: PricingPlan[] = [
@@ -302,7 +302,7 @@ export interface PortfolioItem {
 
 export const PORTFOLIO: PortfolioItem[] = [
   { category: 'E-commerce', title: 'StyleKart Online Store', description: 'A full-featured e-commerce platform with payment gateway integration and an admin dashboard.', tags: ['React', 'Node.js', 'MongoDB'] },
-  { category: 'Web App', title: 'LIC Agent Dairy', description: 'A management web app for LIC agents to track clients, policies and renewals.', tags: ['Angular', 'Express.js', 'MySQL'] },
+  { category: 'Web App', title: 'Policy Niketan', description: 'A management web app for any type of Insurance Agents to track clients, policies and renewals.', tags: ['Angular', 'Express.js', 'MySQL'] },
   { category: 'EdTech', title: 'LearnHub Learning Platform', description: 'An online learning platform with course delivery, quizzes and certification.', tags: ['Angular', 'TypeScript', 'MongoDB'] },
   { category: 'Business', title: 'BrightMedia Marketing Site', description: 'A high-conversion marketing website with SEO-first architecture.', tags: ['WordPress', 'SEO'] },
   { category: 'Dashboard', title: 'Business Analytics Dashboard', description: 'A real-time analytics dashboard for tracking KPIs and business performance.', tags: ['React', 'Node.js', 'SQL'] },
