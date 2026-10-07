@@ -85,7 +85,7 @@ export const PRIVACY_POLICY: LegalDocument = {
       id: 'advertising-services',
       heading: 'Advertising services',
       paragraphs: [
-        'When we run advertising campaigns on your behalf, the data involved is handled under your project agreement with us and the privacy policies and terms of the advertising platforms used.',
+        'When we run advertising campaigns or set up ad monetization on your behalf, the data involved is handled under your project agreement with us and the privacy policies and terms of the advertising platforms and ad networks used.',
       ],
     },
     {
@@ -187,10 +187,11 @@ export const TERMS_AND_CONDITIONS: LegalDocument = {
     },
     {
       id: 'advertising-services',
-      heading: 'Advertising services',
+      heading: 'Advertising and monetization services',
       paragraphs: [
         'The results of advertising depend on factors outside our control, including platform policies, competition, budget and market conditions. We do not guarantee specific rankings, impressions, clicks, leads or sales.',
         'Advertising spend paid to third-party platforms is separate from our fees unless the Project Agreement states otherwise, and each platform\'s own terms and policies apply.',
+        'For ad monetization, we do not guarantee approval by any ad network or any level of ad revenue. Networks such as Google AdSense apply their own program policies and may approve, limit or disable an account at their discretion. You are responsible for keeping your site and its traffic compliant with those policies.',
       ],
     },
     {

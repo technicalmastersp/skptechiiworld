@@ -48,6 +48,7 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
                   <option>Backend Development</option>
                   <option>E-commerce Solutions</option>
                   <option>Advertisement</option>
+                  <option>Ad Monetization</option>
                 </select>
               </label>
               <label>Message *<textarea rows="1" placeholder="Tell us about your project..."></textarea></label>

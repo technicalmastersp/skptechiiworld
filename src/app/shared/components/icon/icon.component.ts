@@ -161,6 +161,9 @@ import { CommonModule } from '@angular/common';
         <ng-container *ngSwitchCase="'megaphone'">
           <path d="M3 10.5v3a1 1 0 0 0 1 1h2.5L15 18.5v-13L6.5 9.5H4a1 1 0 0 0-1 1Z" /><path d="M18.5 9.5a4 4 0 0 1 0 5" /><path d="M7 14.5l1.1 4.3a1 1 0 0 0 1 .7h1.2" />
         </ng-container>
+        <ng-container *ngSwitchCase="'coins'">
+          <circle cx="9.5" cy="14.5" r="6" /><path d="M7.5 12.5h4M7.5 14.5h4M9 12.5c1.6 0 2.5.7 2.5 1.8S10.6 16 9 16l3 2.5" /><path d="M9.5 8.5A6 6 0 0 1 14.5 4.2A6 6 0 0 1 20.5 10c0 1.6-.6 3-1.6 4.1" />
+        </ng-container>
         <ng-container *ngSwitchCase="'users'">
           <circle cx="8.5" cy="8" r="3" /><path d="M2.5 19c0-3 2.7-5 6-5s6 2 6 5" /><path d="M15.5 6a3 3 0 1 1 0 6M17.5 14c2.3.5 4 2.2 4 5" />
         </ng-container>

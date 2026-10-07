@@ -48,6 +48,7 @@ import { COMPANY, FAQ_ITEMS } from '../../core/data/site-data';
                 <option>Backend Development</option>
                 <option>E-commerce Solutions</option>
                 <option>Advertisement</option>
+                <option>Ad Monetization</option>
                 <option>Other</option>
               </select>
             </label>

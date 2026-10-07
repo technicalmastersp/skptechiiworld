@@ -132,7 +132,7 @@ export const PAGE_META: PageMeta[] = [
   {
     path: '/services',
     title: 'Web Development Services | SKP Techii World',
-    description: 'Website creation, frontend & backend development, WordPress, e-commerce, payments, SEO, UI/UX design and advertising — explore our full service catalogue.',
+    description: 'Website creation, frontend & backend development, WordPress, e-commerce, SEO, UI/UX design, advertising and ad monetization — explore all our services.',
   },
   {
     path: '/products',
@@ -214,6 +214,7 @@ export const SERVICES: ServiceItem[] = [
   { icon: 'palette', title: 'UI/UX Design', description: 'Creative, user-focused and conversion-driven designs.', path: '/services' },
   { icon: 'headset', title: 'Consultation & Support', description: 'Get expert advice for your business growth.', path: '/services' },
   { icon: 'megaphone', title: 'Advertisement', description: 'Promote your business with targeted online advertising campaigns.', path: '/services' },
+  { icon: 'coins', title: 'Ad Monetization', description: 'Set up AdSense and other ad networks on your site and earn from your traffic.', path: '/services' },
 ];
 
 export const PRODUCTS: ProductItem[] = [
