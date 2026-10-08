@@ -42,13 +42,13 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
             <div class="footer__form-row">
               <label>Service Required
                 <select>
-                  <option>Select a service</option>
-                  <option>Website Creation</option>
-                  <option>Frontend Development</option>
-                  <option>Backend Development</option>
-                  <option>E-commerce Solutions</option>
-                  <option>Advertisement</option>
-                  <option>Ad Monetization</option>
+                  <option class="dropdownOptions">Select a service</option>
+                  <option class="dropdownOptions">Website Creation</option>
+                  <option class="dropdownOptions">Frontend Development</option>
+                  <option class="dropdownOptions">Backend Development</option>
+                  <option class="dropdownOptions">E-commerce Solutions</option>
+                  <option class="dropdownOptions">Advertisement</option>
+                  <option class="dropdownOptions">Ad Monetization</option>
                 </select>
               </label>
               <label>Message *<textarea rows="1" placeholder="Tell us about your project..."></textarea></label>
@@ -132,6 +132,7 @@ import { COMPANY, FOOTER_LINKS } from '../../../core/data/site-data';
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
     }
+    .dropdownOptions { color: #000;}
     .footer__contact strong { display: block; color: #fff; font-size: var(--fs-sm); }
     .footer__contact small { color: var(--color-text-on-dark-muted); font-size: var(--fs-xs); }
 

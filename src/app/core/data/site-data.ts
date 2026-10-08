@@ -190,7 +190,7 @@ export const NAV_LINKS: NavLink[] = [
 export const HERO_HIGHLIGHTS = [
   { icon: 'heart', label: '100% Client Satisfaction' },
   { icon: 'clock', label: 'On-Time Delivery' },
-  { icon: 'tag', label: 'Affordable Pricing' },
+  // { icon: 'tag', label: 'Affordable Pricing' },
   { icon: 'headset', label: '24/7 Support' },
 ];
 
@@ -253,10 +253,10 @@ export const STATS: StatItem[] = [
 
 export const TEAM: TeamMember[] = [
   { photo: 'assets/images/leadership/founder.jpg', name: 'Shashank S. Pandey', role: 'Founder' },
-  { photo: 'assets/images/person-icon.png', name: 'Swaranjeet Singh', role: 'Director, Development' },
-  { photo: 'assets/images/leadership/akhilesh.jpg', name: 'Akhilesh Kumar', role: 'General Manager' },
+  { photo: 'assets/images/leadership/swaranjeet.png', name: 'Swaranjeet Singh', role: 'Director, Development' },
+  { photo: 'assets/images/leadership/akhilesh.png', name: 'Akhilesh Kumar', role: 'General Manager' },
   { photo: 'assets/images/person-icon.png', name: 'Shilpa Shrivastava', role: 'Lead Programmer' },
-  { photo: 'assets/images/person-icon.png', name: 'Adarsh Sharma', role: 'DevOps & SEO Expert' },
+  { photo: 'assets/images/person-icon.png', name: 'Priya Pandey', role: 'Recruitment Partner' },
 ];
 
 export const PROCESS_STEPS: ProcessStep[] = [
