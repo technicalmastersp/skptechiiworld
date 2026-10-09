@@ -252,7 +252,7 @@ export const STATS: StatItem[] = [
 ];
 
 export const TEAM: TeamMember[] = [
-  { photo: 'assets/images/leadership/founder.jpg', name: 'Shashank S. Pandey', role: 'Founder' },
+  { photo: 'assets/images/leadership/founderNew.png', name: 'Shashank S. Pandey', role: 'Founder' },
   { photo: 'assets/images/leadership/swaranjeet.png', name: 'Swaranjeet Singh', role: 'Director, Development' },
   { photo: 'assets/images/leadership/akhilesh.png', name: 'Akhilesh Kumar', role: 'General Manager' },
   { photo: 'assets/images/person-icon.png', name: 'Shilpa Shrivastava', role: 'Lead Programmer' },
