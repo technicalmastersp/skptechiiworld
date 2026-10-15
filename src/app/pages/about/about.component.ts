@@ -66,7 +66,7 @@ import { ABOUT_POINTS, STATS, PROCESS_STEPS } from '../../core/data/site-data';
       <div class="container cta-band__inner">
         <div>
           <h2 class="section-title" style="color:#fff">Let's build something great together</h2>
-          <p class="section-sub" style="color:rgba(255,255,255,.85)">Tell us about your project and we'll get back to you within 24 hours.</p>
+          <p class="section-sub" style="color:rgba(255,255,255,.85)">Tell us about your project and we'll get back to you within few hours.</p>
         </div>
         <a routerLink="/contact" class="btn btn-outline-light">Get in Touch <tn-icon name="arrow-right" [size]="16" /></a>
       </div>

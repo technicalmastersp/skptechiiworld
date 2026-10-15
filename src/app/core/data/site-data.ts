@@ -162,7 +162,7 @@ export const PAGE_META: PageMeta[] = [
   {
     path: '/contact',
     title: 'Contact Us | SKP Techii World',
-    description: 'Get a free quote from SKP Techii World. Call, email or fill out our contact form and we will get back to you within 24 hours.',
+    description: 'Get a free quote from SKP Techii World. Call, email or fill out our contact form and we will get back to you within few hours.',
   },
   {
     path: '/privacy-policy',
@@ -252,7 +252,7 @@ export const STATS: StatItem[] = [
 ];
 
 export const TEAM: TeamMember[] = [
-  { photo: 'assets/images/leadership/founderNew.png', name: 'Shashank S. Pandey', role: 'Founder' },
+  { photo: 'assets/images/leadership/founderNew.png', name: 'Shashank Shekhar Pandey', role: 'Founder' },
   { photo: 'assets/images/leadership/swaranjeet.png', name: 'Swaranjeet Singh', role: 'Director, Development' },
   { photo: 'assets/images/leadership/akhilesh.png', name: 'Akhilesh Kumar', role: 'General Manager' },
   { photo: 'assets/images/person-icon.png', name: 'Shilpa Shrivastava', role: 'Lead Programmer' },

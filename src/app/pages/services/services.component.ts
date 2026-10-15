@@ -48,7 +48,7 @@ import { SERVICES, PROCESS_STEPS } from '../../core/data/site-data';
       <div class="container cta-band__inner">
         <div>
           <h2 class="section-title" style="color:#fff">Have a project in mind?</h2>
-          <p class="section-sub" style="color:rgba(255,255,255,.85)">Tell us what you need and we'll get back to you with a free quote within 24 hours.</p>
+          <p class="section-sub" style="color:rgba(255,255,255,.85)">Tell us what you need and we'll get back to you with a free quote within few hours.</p>
         </div>
         <a routerLink="/contact" class="btn btn-outline-light">Get a Free Quote <tn-icon name="arrow-right" [size]="16" /></a>
       </div>
